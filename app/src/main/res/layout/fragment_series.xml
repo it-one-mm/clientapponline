@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SeriesFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:background="@color/colorOnPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/data_panel"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="အသစ္ေရာက္ဇာတ္လမ္းတြဲမ်ား"
+            android:fontFamily="@font/zgf"
+            android:textColor="@color/colorPrimary"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@+id/newseries"/>
+
+        <TextView
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ဇာတ္လမ္းတြဲအားလံုး"
+            android:fontFamily="@font/zgf"
+            android:textColor="@color/colorPrimary"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@+id/allseries"/>
+    </LinearLayout>
+</FrameLayout>

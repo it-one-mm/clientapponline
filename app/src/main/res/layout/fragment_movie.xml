@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MovieFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+   <LinearLayout
+       android:layout_margin="20dp"
+       android:background="@color/colorOnPrimary"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/data_panel"
+       android:orientation="vertical">
+
+
+    <TextView
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="အသစ္ေရာက္ဇာတ္ကားမ်ား"
+        android:fontFamily="@font/zgf"
+        android:textColor="@color/colorPrimary"
+        />
+       <androidx.recyclerview.widget.RecyclerView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/newmoives"/>
+
+       <TextView
+           android:textSize="16sp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="ဇာတ္ကားအားလံုး"
+           android:fontFamily="@font/zgf"
+           android:textColor="@color/colorPrimary"
+           />
+       <androidx.recyclerview.widget.RecyclerView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/allmoives"/>
+   </LinearLayout>
+</FrameLayout>
