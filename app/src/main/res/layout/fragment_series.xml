@@ -6,39 +6,64 @@
     tools:context=".SeriesFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <LinearLayout
-        android:layout_margin="20dp"
-        android:background="@color/colorOnPrimary"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/data_panel"
-        android:orientation="vertical">
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <LinearLayout
+           android:layout_margin="20dp"
+           android:background="@color/colorOnPrimary"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:id="@+id/data_panel"
+           android:orientation="vertical">
 
 
-        <TextView
-            android:textSize="16sp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="အသစ္ေရာက္ဇာတ္လမ္းတြဲမ်ား"
-            android:fontFamily="@font/zgf"
-            android:textColor="@color/colorPrimary"
-            />
-        <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_height="300dp"
-            android:id="@+id/newseries"/>
+           <TextView
+               android:textSize="16sp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="အသစ္ေရာက္ဇာတ္လမ္းတြဲမ်ား"
+               android:fontFamily="@font/zgf"
+               android:textColor="@color/colorPrimary"
+               />
+           <androidx.recyclerview.widget.RecyclerView
+               android:layout_width="match_parent"
+               android:layout_height="300dp"
+               android:id="@+id/newseries"/>
 
-        <TextView
-            android:textSize="16sp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="ဇာတ္လမ္းတြဲအားလံုး"
-            android:fontFamily="@font/zgf"
-            android:textColor="@color/colorPrimary"
-            />
-        <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_height="300dp"
-            android:id="@+id/allseries"/>
-    </LinearLayout>
+           <TextView
+               android:textSize="16sp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="ဇာတ္လမ္းတြဲအားလံုး"
+               android:fontFamily="@font/zgf"
+               android:textColor="@color/colorPrimary"
+               />
+           <androidx.recyclerview.widget.RecyclerView
+               android:layout_width="match_parent"
+               android:layout_height="300dp"
+               android:id="@+id/allseries"/>
+
+           <com.google.android.gms.ads.AdView
+               android:layout_margin="10dp"
+               xmlns:ads="http://schemas.android.com/apk/res-auto"
+               android:id="@+id/adView1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               ads:adSize="BANNER"
+               ads:adUnitId="@string/banner_id">
+           </com.google.android.gms.ads.AdView>
+           <com.google.android.gms.ads.AdView
+               android:layout_margin="10dp"
+               xmlns:ads="http://schemas.android.com/apk/res-auto"
+               android:id="@+id/adView2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               ads:adSize="BANNER"
+               ads:adUnitId="@string/banner_id">
+           </com.google.android.gms.ads.AdView>
+       </LinearLayout>
+   </ScrollView>
 </FrameLayout>
